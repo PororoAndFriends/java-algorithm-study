@@ -6,13 +6,12 @@ public class Main {
 
         int num = scanner.nextInt();
         int counter = num;
-            System.out.printf("%d ", counter);
         while (counter <= 200){
-            counter += num;
             System.out.printf("%d ", counter);
             if (counter % 10 == 0){
                 break;
             }
+            counter += num;
         }
             
     }
