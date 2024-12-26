@@ -18,7 +18,7 @@ public class Main {
         int head = scanner.nextInt();
         // 팀원이 검사 가능한 수
         int tail = scanner.nextInt();
-        int count = 0;
+        Integer count = 0;
 
         for(int i=0;i<restCount;i++){
             int temp = custCount[i];
