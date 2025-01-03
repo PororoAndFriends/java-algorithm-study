@@ -21,10 +21,7 @@ public class Main {
         arr[2] = 7;
 
         for(int i=3;i<n+1;i++){
-            arr[i] = (arr[i-1]*2) + (arr[i-2]*3) + (arr[i-3] * 2);
-            if (arr[i] >= 1000000007){
-                arr[i] %= 1000000007;
-            }
+            arr[i] = ((arr[i-1]*2) + (arr[i-2]*3) + (arr[i-3] * 2))%1000000007;
         }
 
         System.out.println(arr[n]);
