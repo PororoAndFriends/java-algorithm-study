@@ -23,9 +23,11 @@ public class Main {
         arr[2] = 7;
 
         for(int i=3;i<n+1;i++){
-            arr[i] = (int)((long)arr[i - 1] * 2
-                          + (long)arr[i - 2] * 3 
-                          + ((i - 2) * 2)) % MOD;
+            arr[i] = (arr[i-1] * 2 + arr[i-2] * 3) % MOD;
+            for(int j=i-3;j>=0;j--){
+
+                arr[i] = (arr[i] + arr[j] * 2) % MOD;
+            }
         }
 
         System.out.println(arr[n]);
